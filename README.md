@@ -1,4 +1,7 @@
 # Github Pull Request Templates
+## Owners
+- Developer: Max Aubain, @maxaubain
+
 ## Summary
 By placing a text file `pull_request_template.md` in select areas of a repository, the text file content will be automatically populated in the first comment of every subsequent pull request.  Collaborators can also use pull request template files if the pull request is being merged with the default branch of the repository.
 
