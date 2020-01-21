@@ -1,3 +1,5 @@
+(If viewing this file using the Github dashboard, set file view to `raw` to see comments)
+
 [comments]: # "Pull Request documentation can be a self-enclosed document
 to provide all the necessary information for a reviewer to undertand the 
 merged code in its entirety.  This can be of use for many roles, such as 
