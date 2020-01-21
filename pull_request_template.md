@@ -25,3 +25,23 @@ Implementation of version: [{{User Story ref num}.{version}}]
 
 ## User Interface
 - UI update description 1 {screenshot image}...
+
+## References
+- [Reference link 1...]()
+
+## Closing Comments
+- Comment 1...
+
+## Checklist
+**Before Merge**
+- [ ] Merge latest upstream remote.
+- [ ] Commit history is clean.
+- [ ] Code compiles / passes checks.
+- [ ] Local and global tests pass.
+- [ ] Code review.
+
+**After Merge**
+- [ ] Pull merged-into upstream branch to local branch.
+- [ ] Delete merged-from local and remote branch.
+- [ ] Verify deployment and make new PR for unforeseen bugs.
+- [ ] Update project board and leave comments.
