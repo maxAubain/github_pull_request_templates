@@ -1,18 +1,16 @@
 [comment]: # "Remove this Title section and insert Title information in 
 PR Title form field above"
 # Title
-[{Initiative}] [{Epic}] [{Type}] [{User Story ref num}.{version}] [{'merge into' branch}]
+[{Initiative}] [{Epic}] [{Agile-Item-Type}] [{Agile-Item-ID}] [{'merge into' branch}][{description}]
 
 ## Owners
 - Role: Name, contact information...
 
 ## Summary
-User Story Ref. Num.: [{user story ref num}]
+{Agile-Item-ID} or [Agile-Item link...]()
 ```
 {User story}
 ```
-Implementation of version: [{{User Story ref num}.{version}}]
-- [Sprint-plan / Kanban-design link...]()
 - [Link to related PR...]()
 - Summary description 1...
 
@@ -34,14 +32,15 @@ Implementation of version: [{{User Story ref num}.{version}}]
 
 ## Checklist
 **Before Merge**
-- [ ] Merge latest upstream remote.
+- [ ] Verify merge-into branch.
+- [ ] Merge latest upstream remote, resolve conflicts.
 - [ ] Commit history is clean.
-- [ ] Code compiles / passes checks.
-- [ ] Local and global tests pass.
-- [ ] Code review.
+- [ ] Run app / pass checks.
+- [ ] Pass local / global tests.
+- [ ] Review code.
 
 **After Merge**
 - [ ] Pull merged-into upstream branch to local branch.
 - [ ] Delete merged-from local and remote branch.
-- [ ] Verify deployment and make new PR for unforeseen bugs.
+- [ ] Verify deployment and file Issue for unforeseen bugs.
 - [ ] Update project board and leave comments.
