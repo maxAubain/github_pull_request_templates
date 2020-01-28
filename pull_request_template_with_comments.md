@@ -11,7 +11,7 @@ code review seemless and a good use of developers' time."
 [comment]: # "Remove this Title section and insert Title information in 
 PR Title form field above"
 # Title
-[{Initiative}] [{Epic}] [{Type}] [{User Story ref num}.{version}] [{'merge into' branch}]
+[{Initiative}] [{Epic}] [{Agile-Item-Type}] [{Agile-Item-ID}] [{'merge into' branch}][{description}]
 
 [comments]: # "The Title can hold small identifiers that provide context
 to the PR in relation to the application as a whole and that allow simple 
@@ -19,6 +19,19 @@ comparison to other PRs in the Pull Request tab. The identifiers become
 more useful if consistent across PRs and can serve as search terms. custom
 'label' tags can also be added to PR with Github options and will show next 
 to the Title."
+
+## Summary
+{Agile-Item-ID} or [Agile-Item link...]()
+```
+{User story}
+```
+- Summary description 1...
+
+[comments]: # "The Summary can include the bulk of the description of the 
+coding content and functionality.  This can include the User Story, 
+descriptions on how the User Story was implemented in practice, and links 
+to other project tracker tools, such as an Agile Scrum sprint plan or an 
+Agile Kanban board item."
 
 ## Owners
 - Role: Name, contact information...
@@ -29,22 +42,6 @@ with those who have done the heavy lifting and foster personal ownership of
 the entire feature. The contact information can be, for example, an email 
 address, or a github username tag. Roles can be 'developer', 'reviewer', 
 'designer', etc."
-
-## Summary
-User Story Ref. Num.: [{user story ref num}]
-```
-{User story}
-```
-Implementation of version: [{{User Story ref num}.{version}}]
-- [Sprint-plan / Kanban-design link...]()
-- [Link to related PR...]()
-- Summary description 1...
-
-[comments]: # "The Summary can include the bulk of the description of the 
-coding content and functionality.  This can include the User Story, 
-descriptions on how the User Story was implemented in practice, and links 
-to other project tracker tools, such as an Agile Scrum sprint plan or an 
-Agile Kanban board item."
 
 ## Libraries / Dependencies / Frameworks Modified
 - [ADD / REMOVE / UPDATE] {Lib name} : {Lib function} : {Reason for change}
@@ -86,16 +83,19 @@ any other category. Those comments can be left here."
 
 ## Checklist
 **Before Merge**
-- [ ] Merge latest upstream remote.
-- [ ] Commit history is clean.
-- [ ] Code compiles / passes checks.
-- [ ] Local and global tests pass.
-- [ ] Code review.
+- [ ] Verify merge-into branch in PR.
+- [ ] Merge latest upstream remote to local repository, resolve conflicts.
+- [ ] Confirm commit history is clean.
+- [ ] Run app / pass checks.
+- [ ] Pass local / global tests.
+- [ ] Publish to remote.
+- [ ] Review code.
 
 **After Merge**
-- [ ] Pull merged-into upstream branch to local branch.
 - [ ] Delete merged-from local and remote branch.
-- [ ] Verify deployment and make new PR for unforeseen bugs.
+- [ ] Pull merged-into upstream branch to local branch.
+- [ ] Run deployment flow.
+- [ ] Verify deployment and file Issue for unforeseen bugs.
 - [ ] Update project board and leave comments.
 
 [comments]: # "A checklist can be a low investment tool to prevent simple,
